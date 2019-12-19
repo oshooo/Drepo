@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/fontawesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Rider Dashboard</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-4">
+                    <div class="container">
+                    <a class="navbar-brand" href="#">
+                            <img src="media/logo.png" alt="user_logo" height="50">
+                        </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shipments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Samples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logged in as </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-lg-2">
+                          <div class="card text-center pb-2">
+                            <img class="rounded-circle border border-dark card-img-top p-1 mt-2" src="media/avatar.png" alt="Card image cap" style="width: 50%; height: auto; margin:auto">
+                                <div class="card-body p-0">
+                                  <h5 class="card-title" >John Snow</h5>
+                                <ul class="list-group list-group-flush ">
+                                  <li class="list-group-item p-0">24/09/1990</li>
+                                  <li class="list-group-item p-0">08037546263</li>
+                                  <li class="list-group-item p-0">Lokoja</li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-9 col-lg-8">
+                            <div class="row bg-white pt-4 pb-4 pl-1 pr-1">
+                                    <div class="col-sm-3">
+                                      <div class="card shadow border border-warning h-100">
+                                        <div class="card-head py-3 text-center bg-warning">
+                                            <i class="fas fa-flask"></i>
+                                            <h6 class="m-0 font-weight-bold">Collected</h6>
+                                          </div>
+                                        <div class="card-body text-center">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <div class="card shadow border border-danger">
+                                        <div class="card-head py-3 text-center bg-danger rounded">
+                                              <span>&#8358;</span>
+                                            <h6 class="m-0 font-weight-bold">Collected</h6>
+                                          </div>
+                                        <div class="card-body text-center">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <div class="card shadow border border-success rounded">
+                                        <div class="card-head py-3 text-center bg-success rounded">
+                                            <i class="fas fa-flask"></i>
+                                            <h6 class="m-0 font-weight-bold">Earned</h6>
+                                          </div>
+                                        <div class="card-body text-center">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">25,000</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <div class="card shadow border border-success">
+                                        <div class="card-head py-3 text-center bg-success">
+                                            <i class="fas fa-flask"></i>
+                                            <h6 class="m-0 font-weight-bold">Total Payout</h6>
+                                          </div>
+                                        <div class="card-body text-center">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">100,000</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="box table-responsive table-bordered border-warning p-2 pt-3 rounded bg-white mt-3" >
+                            <table class="table">
+                              <div class="card">
+
+                                    <div class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                        <div class="table-title">
+                                          <h2 class="text-primary">Current Shipment</h2>
+                                        </div>
+
+
+                                      <div>
+                                        <button type="button" class="btn  btn-sm">
+                                          <i class="material-icons text-primary">add_circle_outline</i>
+                                        </button>
+                                        <button type="button" class="btn btn-sm">
+                                          <i class="material-icons text-primary">post_add</i>
+                                        </button>
+                                      </div>
+
+                                    </div>
+                              </div>
+
+                                <thead>
+                                  <tr>
+                                      <th scope="col">Tracking Number</th>
+                                      <th scope="col">Samples</th>
+                                      <th scope="col">Facility</th>
+                                      <th scope="col">Delivery Laboratory</th>
+                                      <th scope="col">Shipped Time</th>
+                                      <th scope="col">Status</th>
+                                      <th scope="col">Updates</th>
+                                      <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td class="d-flex-row">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                    </div>
+                    
+                    <div class="box table-responsive table-bordered p-2 pt-3 mt-3 mb-3 rounded bg-white" style="border-color: tomato;">
+  
+                            <table class="table" style="border-color: tomato !important;">
+                              <div class="card">
+                               <div class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                  
+                                        <div class="table-title">
+                                          <h2 class="text-primary">Last 50 Shipments</h2>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <thead>
+                                  <tr>
+                                      <th scope="col">Tracking Number</th>
+                                      <th scope="col">Samples</th>
+                                      <th scope="col">Facility</th>
+                                      <th scope="col">Delivery Laboratory</th>
+                                      <th scope="col">Shipped Time</th>
+                                      <th scope="col">Status</th>
+                                      <th scope="col">Updates</th>
+                                      <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td >
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FUB/AJE/3/112/15735</th>
+                                    <td>3</td>
+                                    <td>Toronto</td>
+                                    <td>TOLU/PHC/Aje/Layemi/AECHDJ</td>
+                                    <td>12/03/1930 12:00pm</td>
+                                    <td>Toronto</td>
+                                    <td>Picked from facility</td>
+                                    <td>
+
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+      
+                    </div>
+
+                  
+                </div>
+            </div>
+
+            <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+          </a>
+            
+            <footer class="page-footer font-small bg-light">
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="#">Damiene Foundation Nigeria </a>
+              </div>
+      </footer>
+
+
+
+
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
